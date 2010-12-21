@@ -1,6 +1,27 @@
 README
 ======
 
+Why the Fork?
+-------------------
+
+[Eric Clemmons' fork][3] aims to simplify the process of starting with Symfony by:
+
+1. Using the same environment conventions as Zend Framework for easier mixed deployments
+2. Organizing configuration files into folders
+3. Using *git submodules* in place of shell scripts
+4. Standardizing the location of *vendor* software outside of the `src` tree.
+
+### Installation
+
+    $ git clone http://github.com/ericclemmons/symfony-sandbox.git my-project
+    $ cd my-project
+    
+    my-project $ git submodule update --init
+    my-project $ php app/console assets:install --symlink web
+    my-project $ chmod -R a+w app/cache app/logs
+    
+Now continue on as usual! :)
+
 What is Symfony?
 ----------------
 
@@ -39,3 +60,4 @@ about it.
 
 [1]: http://docs.symfony-reloaded.org/
 [2]: http://symfony-reloaded.org/
+[3]: http://github.com/ericclemmons/symfony-sandbox

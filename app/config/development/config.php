@@ -1,9 +1,9 @@
 <?php
 
-$loader->import('config.php');
+$loader->import(__DIR__.'/../config.php');
 
 $container->loadFromExtension('app', 'config', array(
-    'router'   => array('resource' => '%kernel.root_dir%/config/routing_dev.php'),
+    'router'   => array('resource' => '%kernel.root_dir%/config/development/routing.php'),
     'profiler' => array('only-exceptions' => false),
 ));
 

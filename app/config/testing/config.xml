@@ -8,7 +8,7 @@
                         http://www.symfony-project.org/schema/dic/zend http://www.symfony-project.org/schema/dic/zend/zend-1.0.xsd">
 
     <imports>
-        <import resource="config_dev.xml" />
+        <import resource="../development/config.xml" />
     </imports>
 
     <webprofiler:config

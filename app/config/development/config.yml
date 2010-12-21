@@ -1,8 +1,8 @@
 imports:
-    - { resource: config.yml }
+    - { resource: ../config.yml }
 
 app.config:
-    router:   { resource: "%kernel.root_dir%/config/routing_dev.yml" }
+    router:   { resource: "%kernel.root_dir%/config/development/routing.yml" }
     profiler: { only_exceptions: false }
 
 webprofiler.config:

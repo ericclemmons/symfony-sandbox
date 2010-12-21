@@ -10,11 +10,11 @@
                         http://www.symfony-project.org/schema/dic/zend http://www.symfony-project.org/schema/dic/zend/zend-1.0.xsd">
 
     <imports>
-        <import resource="config.xml" />
+        <import resource="../config.xml" />
     </imports>
 
     <app:config>
-        <app:router resource="%kernel.root_dir%/config/routing_dev.xml" />
+        <app:router resource="%kernel.root_dir%/config/development/routing.xml" />
         <app:profiler only-exceptions="false" />
     </app:config>
 

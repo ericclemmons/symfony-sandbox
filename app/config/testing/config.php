@@ -1,6 +1,6 @@
 <?php
 
-$loader->import('config_dev.php');
+$loader->import(__DIR__.'/../development/config.php');
 
 $container->loadFromExtension('app', 'config', array(
     'error_handler' => false,

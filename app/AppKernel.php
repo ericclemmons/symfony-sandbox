@@ -49,12 +49,12 @@ class AppKernel extends Kernel
     {
         // use YAML for configuration
         // comment to use another configuration format
-        $loader->load(__DIR__.'/config/config_'.$this->getEnvironment().'.yml');
+        $loader->load(__DIR__.'/config/'.$this->getEnvironment().'/config.yml');
 
         // uncomment to use XML for configuration
-        //$loader->load(__DIR__.'/config/config_'.$this->getEnvironment().'.xml');
+        // $loader->load(__DIR__.'/config/'.$this->getEnvironment().'/config.xml');
 
         // uncomment to use PHP for configuration
-        //$loader->load(__DIR__.'/config/config_'.$this->getEnvironment().'.php');
+        // $loader->load(__DIR__.'/config/'.$this->getEnvironment().'/config.php');
     }
 }
